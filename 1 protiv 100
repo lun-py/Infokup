@@ -1,0 +1,14 @@
+status_pitanja="T"
+broj_ostalih_izazivaca=100
+broj_preskakanja=0
+novac_mirko=0
+while broj_ostalih_izazivaca>0 and broj_preskakanja<=3 and status_pitanja!="F":
+    novac_kruga=100000//broj_ostalih_izazivaca
+    status_pitanja,n=input().split()
+    n=int(n)
+    broj_ostalih_izazivaca-=n
+    if status_pitanja=="T":
+        novac_mirko+=novac_kruga*n
+    elif status_pitanja=="F":
+        novac_mirko=0
+print(int(novac_mirko))
