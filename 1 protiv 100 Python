@@ -12,3 +12,5 @@ while broj_ostalih_izazivaca>0 and broj_preskakanja<=3 and status_pitanja!="F":
     elif status_pitanja=="F":
         novac_mirko=0
 print(int(novac_mirko))
+
+#u izradi koda pomogao: lun-py (GitHub)
