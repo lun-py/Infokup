@@ -6,5 +6,8 @@ for i in range(n):
 print(prvo)
 drugo=prvo//100
 print(drugo)
-trece=100-(prvo%100)
-print(trece)
+if prvo%100==0:
+    print(0)
+else:
+    trece=100-(prvo%100)
+    print(trece)
